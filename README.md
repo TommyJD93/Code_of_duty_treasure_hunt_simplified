@@ -1,7 +1,7 @@
 # Abstract
 
 This repo is meant as a Manual for the treasure hunt and it's used for testing/developing.
-You can find the first level of the hunt in [this repo](https://github.com/giacominho3/MaRViN).
+You can find the first level of the hunt in [this repo](https://github.com/TommyJD93/MaRViN).
 
 The treasure hunt is divided in levels, the user cannot proceed to the next level before passing the current one.
 
