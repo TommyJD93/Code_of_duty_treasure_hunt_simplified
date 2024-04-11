@@ -1,0 +1,31 @@
+Cos'è uno script Bash?
+
+Uno script Bash è un programma scritto nel linguaggio di scripting Bash, che esegue una serie di comandi come quelli visti finora.
+
+
+Variabili
+
+Le variabili sono contenitori per memorizzare dati. In Bash, vengono definite assegnando un valore a un nome di variabile tramite l'operatore di assegnazione =.
+Ad esempio, per assegnare alla variabile "var" il valore "hello", si utilizza var="hello". È anche possibile assegnare il valore di un'altra variabile, come nell'esempio var1=$var2.
+Le virgolette servono a delimitare il valore della variabile, mentre il dollaro prima del nome della variabile indica che si vuole estrarre il suo valore.
+
+
+Il ciclo for
+
+I cicli consentono di eseguire una serie di istruzioni ripetutamente. In Bash, il ciclo for viene utilizzato per iterare su un insieme di valori, come sequenze numeriche.
+La sintassi del ciclo for è la seguente:
+
+for valore in valori; do
+    *istruzioni*
+done
+
+In questo modo, le istruzioni vengono eseguite per ogni valore all'interno della sequenza specificata.
+Si possono utilizzare diverse opzioni per definire i valori su cui iterare, come {1..10} o il comando seq.
+
+Il comando mv
+Il comando mv, abbreviazione di "move", serve per spostare file da una cartella all'altra. Richiede due argomenti: il primo è l'elemento da spostare, il secondo è il percorso in cui spostarlo.
+Ad esempio, mv file cartella/ sposta il file "file" nella cartella "cartella/". Quando si utilizza mv all'interno di uno script, è necessario specificare i percorsi assoluti dei file e delle cartelle, poiché lo script potrebbe non avere
+informazioni sul percorso corrente. Per ottenere il percorso corrente, si può utilizzare la variabile d'ambiente $PWD, che indica la directory corrente a partire dalla root del sistema.
+
+Note:
+Per maggiori informazioni sui comandi visti fin ora puoi usare "man *nome comando*" per aprire la pagina del manuale riguardante il comando.

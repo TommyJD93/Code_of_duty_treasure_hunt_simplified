@@ -1,0 +1,11 @@
+Git get started guide: https://docs.github.com/en/get-started/getting-started-with-git
+
+About git: https://docs.github.com/en/get-started/using-git/about-git
+
+Git basics https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository (guarda la sezione "Initializing a Repository in an Existing Directory")
+
+Git cheat sheet https://education.github.com/git-cheat-sheet-education.pdf
+
+Free code camp https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/
+
+Aggiungere una chiave SSH al proprio profilo GitHub https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
