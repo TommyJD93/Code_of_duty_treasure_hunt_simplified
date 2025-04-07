@@ -25,7 +25,7 @@ def check_redirect(url):
     else:
         return url
 
-def clone_repo(url_repository, new_folder_path)
+def clone_repo(url_repository, new_folder_path):
 
     url_to_clone = check_redirect(url_repository)
 
