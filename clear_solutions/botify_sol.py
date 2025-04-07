@@ -15,6 +15,30 @@ WHITE = "\033[37m"
 to_check = './practice'
 expected = ['MaRViN_stuff']
 
+def check_redirect(url):
+
+    response = request.get(url, allow_redirects=False)
+
+    if response.status_code == 301:
+        redirect_url = response.headers.get('Location')
+        return redirect_url
+    else:
+        return url
+
+def clone_repo(url_repository, new_folder_path)
+
+    url_to_clone = check_redirect(url_repository)
+
+    comando_clone = ["git", "clone", url_to_clone, new_folder_path]
+
+    try: 
+        subprocess.run(comando_clone, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print(GREEN + "Livello completato con successo!" + RESET)
+        print("Troverai il prossimo livello in " + MAGENTA + new_folder_path + RESET)
+    except subprocess.CalledProcessError as e:
+        print(RED + "Errore durante il cloning del repository: " + str(e) + RESET)
+
+
 def check_ls(cartella, expected):
     try:
         content = set(os.listdir(cartella))
@@ -89,14 +113,7 @@ def main():
     print(RESET)
 
     if (mysolution == solution):
-        try:
-            comando_clone = ["git", "clone", url_repository, new_folder_path]
-            subprocess.run(comando_clone, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print(GREEN + "Livello completato con successo!" + RESET)
-            print("Troverai il prossimo livello in " + MAGENTA + new_folder_path + RESET)
-        except subprocess.CalledProcessError as e:
-            print(RED + "Errore durante il cloning del repository: " + str(e) + RESET)
-
+        clone_repo(url_repository, new_folder_path)
     else:
         print(RED + "La soluzione che hai dato sembra essere errata, ritenta :(" + RESET)
         exit()
