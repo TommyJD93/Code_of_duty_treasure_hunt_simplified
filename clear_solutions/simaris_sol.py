@@ -17,7 +17,7 @@ def main():
     new_folder_path = "../CaesarBot"
 
     # cambiare la repo
-    url_repository = "https://github.com/giacominho3/CaesarBot.git"
+    url_repository = "https://github.com/TommyJD93/CaesarBot.git"
     solution = "3"
 
     if os.path.isdir(new_folder_path):

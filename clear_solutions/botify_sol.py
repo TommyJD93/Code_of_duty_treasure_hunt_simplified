@@ -33,7 +33,7 @@ def main():
     new_folder_path = "../DataGrip"
 
     # cambiare la repo
-    url_repository = "https://github.com/giacominho3/DataGrip.git"
+    url_repository = "https://github.com/TommyJD93/DataGrip.git"
     solution = "55596C51"
 
     expected = ['hotel_california.txt',

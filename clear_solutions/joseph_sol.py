@@ -85,7 +85,7 @@ def main():
     new_folder_path = "../BONUS/Loid"
 
     # cambiare la repo
-    url_repository = "https://github.com/giacominho3/Loid.git"
+    url_repository = "https://github.com/TommyJD93/Loid.git"
     solution = "42"
 
     if os.path.isdir(new_folder_path):

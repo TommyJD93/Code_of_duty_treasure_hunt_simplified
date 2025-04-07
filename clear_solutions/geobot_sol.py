@@ -17,7 +17,7 @@ def main():
     new_folder_path = "../Botify"
 
     # cambiare la repo
-    url_repository = "https://github.com/giacominho3/Botify.git"
+    url_repository = "https://github.com/TommyJD93/Botify.git"
     solution = "5064"
 
     if os.path.isdir(new_folder_path):

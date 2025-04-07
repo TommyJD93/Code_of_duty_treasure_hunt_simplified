@@ -48,7 +48,7 @@ if out.returncode == 0 :
     new_folder_path = "../San_Pietro_bot/"
 
     # cambiare la repo
-    url_repository = "https://github.com/giacominho3/San_Pietro_bot.git"
+    url_repository = "https://github.com/TommyJD93/San_Pietro_bot.git"
 
     if os.path.isdir(new_folder_path):
         print(CYAN + f"I cannot copy the new exercise in {new_folder_path} since there's another dir/file with the same name" + RESET)

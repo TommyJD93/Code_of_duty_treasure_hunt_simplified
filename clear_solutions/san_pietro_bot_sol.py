@@ -55,7 +55,7 @@ def main():
 
         new_folder_path = "../Octocat/"
 
-        url_repository = "https://github.com/giacominho3/Octocat.git"
+        url_repository = "https://github.com/TommyJD93/Octocat.git"
         try:
             comando_clone = ["git", "clone", url_repository, new_folder_path]
             subprocess.run(comando_clone, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

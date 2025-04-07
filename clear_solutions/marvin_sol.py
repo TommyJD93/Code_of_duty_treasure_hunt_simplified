@@ -44,7 +44,7 @@ def main():
                 print(YELLOW + "inavlid option, aborting" + RESET)
                 exit()
     try:
-        url_repository = "https://github.com/giacominho3/GeoBot.git"
+        url_repository = "https://github.com/TommyJD93/GeoBot.git"
 
         if (check_ls(to_check, expected)):
 
